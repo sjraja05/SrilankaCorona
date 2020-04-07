@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="Police Emergency Hotline"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_one"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_setting"
+            android:drawableLeft="@drawable/ic_emergency"
+            android:padding="12dp"
+            android:text="118 / 119"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="Ambulance / Fire and rescue"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_two"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_button_setting"
+            android:drawableLeft="@drawable/ic_emergency"
+            android:padding="12dp"
+            android:text="110"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Accident Service-General Hospital-Colombo"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_three"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_button_setting"
+            android:drawableLeft="@drawable/ic_emergency"
+            android:padding="12dp"
+            android:text="011-2691111"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Tourist Police"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_four"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_button_setting"
+            android:drawableLeft="@drawable/ic_emergency"
+            android:padding="12dp"
+            android:text="011-2421052"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Police Emergency"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_five"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_button_setting"
+            android:drawableLeft="@drawable/ic_emergency"
+            android:padding="12dp"
+            android:text="011-2433333"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Government Information Center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_six"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_button_setting"
+            android:drawableLeft="@drawable/ic_emergency"
+            android:padding="12dp"
+            android:text="1919"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Report Crimes"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_seven"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_button_setting"
+            android:drawableLeft="@drawable/ic_emergency"
+            android:padding="12dp"
+            android:text="011-2691500"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Emergency Police Mobile Squad"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_eight"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_button_setting"
+            android:drawableLeft="@drawable/ic_emergency"
+            android:padding="12dp"
+            android:text="011-5717171"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Fire and Ambulance Service"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_nine"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_button_setting"
+            android:drawableLeft="@drawable/ic_emergency"
+            android:padding="12dp"
+            android:text="011-2422222"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
