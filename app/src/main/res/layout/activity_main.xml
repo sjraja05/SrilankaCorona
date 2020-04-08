@@ -100,7 +100,8 @@
                 android:gravity="center"
                 android:text="Today Cases"
                 android:textColor="#FFFFFF"
-                android:textSize="13sp"></TextView>
+                android:fontFamily="sans-serif-black"
+                android:textSize="15sp"></TextView>
 
             <TextView
                 android:id="@+id/newcasesTextDisplayLocal"
@@ -131,7 +132,8 @@
                 android:gravity="center"
                 android:text="Total Cases"
                 android:textColor="#FFFFFF"
-                android:textSize="13sp"></TextView>
+                android:fontFamily="sans-serif-black"
+                android:textSize="15sp"></TextView>
 
             <TextView
                 android:id="@+id/totalCasesTextDisplayLocal"
@@ -149,7 +151,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/deathscasesLocal"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="80dp"
             android:layout_marginTop="10dp"
             android:backgroundTint="#E64053"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -159,17 +161,18 @@
             <TextView
                 android:id="@+id/deathsTextLocal"
                 android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:layout_marginTop="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif-black"
                 android:gravity="center"
                 android:text="Today Deaths"
                 android:textColor="#FFFFFF"
-                android:textSize="13sp"></TextView>
+                android:textSize="15sp"></TextView>
 
             <TextView
                 android:id="@+id/deathsTextDisplayLocal"
                 android:layout_width="match_parent"
-                android:layout_height="24dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:text=""
@@ -184,7 +187,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginTop="10dp"
-            android:backgroundTint="#E64053"
+            android:backgroundTint="#39C634"
             android:foregroundGravity="center"
             android:orientation="vertical"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -209,7 +212,8 @@
                 android:gravity="center"
                 android:text="Recovered"
                 android:textColor="#FFFFFF"
-                android:textSize="13sp"></TextView>
+                android:fontFamily="sans-serif-black"
+                android:textSize="15sp"></TextView>
         </androidx.cardview.widget.CardView>
 
 

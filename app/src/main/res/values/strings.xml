@@ -7,12 +7,11 @@
     </string>
 
     <string name="main_words">
-
         Corona virus disease(COVID-19) is a new strain \nthat was discovered in 2019 and has not been \npreviously identified in humans. Reported \nillnesses have ranged from mild symptoms to severe illness and death for confirmed\ncorona virus diseases 2019(COVID-19) cases.
     </string>
     <string name="title_activity_maps">Map</string>
 
-    <string name="about">Covid-19 is a app that collects the recent data about the pandemic corona virus
+    <string name="about">CoronaVsSL is a app that collects the recent data about the pandemic corona virus
     and provides the useful information to the user dynamically. I made a use of an api to fetch the stats about
     corona on different nations of the world. </string>
 </resources>

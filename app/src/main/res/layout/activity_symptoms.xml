@@ -26,10 +26,10 @@
 
 
             <ImageView
-                android:layout_width="360dp"
-                android:layout_height="335dp"
+                android:layout_width="wrap_content"
+                android:layout_height="331dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/newcorona" />
+                android:src="@drawable/cor1" />
         </androidx.cardview.widget.CardView>
 
         <TextView

@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //    dataList=new ArrayList<>();
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("Covid-19 Srilanka");
+        toolbar.setTitle("Covid-19 Vs Srilanka");
 
         imageViewSrilanka = findViewById(R.id.imageSrilanka);
         imageViewWorld = findViewById(R.id.imageWorld);
@@ -114,17 +114,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        // mRecyclerView = findViewById(R.id.recycler_view_main);
-//        mRecyclerView.setHasFixedSize(true);
-//        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
 
         mRequestQueue = Volley.newRequestQueue(this);
         mNewsItems = new ArrayList<>();
 
-//        parseJsonCorona();
-//        parseJsonHealth();
-//        parseFitness();
-//        parseEntertainment();
 
 //url Connection
         ItemApi itemapi = new ItemApi();
@@ -169,10 +163,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         Data data = new Data(dataObject.getString("update_date_time"),dataObject.getInt("local_new_cases"),dataObject.getInt("local_total_cases"),dataObject.getInt( "local_total_number_of_individuals_in_hospitals"),dataObject.getInt("local_deaths"),dataObject.getInt("local_new_deaths"),dataObject.getInt(  "local_recovered"),dataObject.getInt( "global_new_cases"),dataObject.getInt(   "global_total_cases"),dataObject.getInt(  "global_deaths"),dataObject.getInt( "global_new_deaths"),dataObject.getInt( "global_recovered"));
                         getData.add(data);
 
-//                        newCases.setText(String.valueOf(data.getGlobal_new_cases()));
-//                        totalCases.setText(String.valueOf(data.getGlobal_total_cases()));
-//                        deaths.setText(String.valueOf(data.getGlobal_new_deaths()));
-//                        recovered.setText(String.valueOf(data.getGlobal_recovered()));
 
                         newCasesLocal.setText(String.valueOf(data.getLocal_new_cases()));
                         totalCasesLocal.setText(String.valueOf(data.getLocal_total_cases()));
@@ -214,178 +204,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
-    private void parseEntertainment() {
-
-
-        String url = "https://newsapi.org/v2/everything?qInTitle=%22entertainment%22&language=en&sortBy=relevancy&apiKey=c7fad055e9964a0c9ee41efbbf6a7933";
-        JsonObjectRequest objectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-
-                try {
-                    JSONArray jsonArray = response.getJSONArray("articles");
-
-                    for (int i = 0; i < jsonArray.length(); i++) {
-
-                        JSONObject object = jsonArray.getJSONObject(i);
-
-                        String imageUrl = object.getString("urlToImage");
-                        String title = object.getString("title");
-                        String content = object.getString("description");
-
-                        mNewsItems.add(new NewsItems(imageUrl, title, content));
-                    }
-                    mAdapter = new NewsAdapter(mNewsItems, getApplicationContext());
-                    mRecyclerView.setAdapter(mAdapter);
-                    mAdapter.setOnItemClickListner(MainActivity.this);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-                Toast.makeText(getApplicationContext(), "Network Connection Error!!", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        mRequestQueue.add(objectRequest);
-
-    }
-
-
-    private void parseFitness() {
-
-        String url = "https://newsapi.org/v2/everything?qInTitle=%22fitness%22&language=en&sortBy=relevancy&apiKey=c7fad055e9964a0c9ee41efbbf6a7933";
-        JsonObjectRequest objectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-
-                try {
-                    JSONArray jsonArray = response.getJSONArray("articles");
-
-                    for (int i = 0; i < jsonArray.length(); i++) {
-
-                        JSONObject object = jsonArray.getJSONObject(i);
-
-                        String imageUrl = object.getString("urlToImage");
-                        String title = object.getString("title");
-                        String content = object.getString("description");
-
-                        mNewsItems.add(new NewsItems(imageUrl, title, content));
-                    }
-                    mAdapter = new NewsAdapter(mNewsItems, getApplicationContext());
-                    mRecyclerView.setAdapter(mAdapter);
-                    mAdapter.setOnItemClickListner(MainActivity.this);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-                Toast.makeText(getApplicationContext(), "Network Connection Error!!", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        mRequestQueue.add(objectRequest);
-    }
-
-    private void parseJsonHealth() {
-
-        String url = "https://newsapi.org/v2/everything?qInTitle=%22health%22&language=en&sortBy=relevancy&apiKey=c7fad055e9964a0c9ee41efbbf6a7933";
-
-        JsonObjectRequest objectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-
-                try {
-                    JSONArray jsonArray = response.getJSONArray("articles");
-
-                    for (int i = 0; i < jsonArray.length(); i++) {
-
-                        JSONObject object = jsonArray.getJSONObject(i);
-
-                        String imageUrl = object.getString("urlToImage");
-                        String title = object.getString("title");
-                        String content = object.getString("description");
-
-                        mNewsItems.add(new NewsItems(imageUrl, title, content));
-                    }
-                    mAdapter = new NewsAdapter(mNewsItems, getApplicationContext());
-                    mRecyclerView.setAdapter(mAdapter);
-                    mAdapter.setOnItemClickListner(MainActivity.this);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-                Toast.makeText(getApplicationContext(), "Network Connection Error!!", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        mRequestQueue.add(objectRequest);
-    }
-
-    private void parseJsonCorona() {
-
-        String url = "https://newsapi.org/v2/everything?qInTitle=%22corona%22&language=en&sortBy=relevancy&apiKey=c7fad055e9964a0c9ee41efbbf6a7933";
-
-        JsonObjectRequest objectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-
-                try {
-                    JSONArray jsonArray = response.getJSONArray("articles");
-
-                    for (int i = 0; i < jsonArray.length(); i++) {
-
-                        JSONObject object = jsonArray.getJSONObject(i);
-
-                        String imageUrl = object.getString("urlToImage");
-                        String title = object.getString("title");
-                        String content = object.getString("description");
-
-                        mNewsItems.add(new NewsItems(imageUrl, title, content));
-                    }
-                    mAdapter = new NewsAdapter(mNewsItems, getApplicationContext());
-                    mRecyclerView.setAdapter(mAdapter);
-                    mAdapter.setOnItemClickListner(MainActivity.this);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-                Toast.makeText(getApplicationContext(), "Network Connection Error!!", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        mRequestQueue.add(objectRequest);
-    }
-
-
-    @Override
-    public void onBackPressed() {
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-
-    }
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
@@ -423,7 +241,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void openDialog() {
-
         ExampleDialog dialog = new ExampleDialog();
         dialog.show(getSupportFragmentManager(), "shown succesfully");
     }

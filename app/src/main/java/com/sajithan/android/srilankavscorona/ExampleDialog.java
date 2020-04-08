@@ -15,7 +15,11 @@ public class ExampleDialog extends AppCompatDialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("Donation").setMessage("Esewa: 9841380904").setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+        builder.setTitle("Donation or Funds").setMessage("A/C name - 'COVID-19 Healthcare and Social Security Fund'" +
+
+
+                " " +
+                "A/C number - 85737373").setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
