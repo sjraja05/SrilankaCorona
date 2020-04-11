@@ -5,17 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark"
+    android:background="#917F7F"
     tools:context=".SrilankaStatus">
 
 
-    <androidx.cardview.widget.CardView android:layout_height="match_parent"
-        android:layout_width="match_parent">
-        <WebView
-            android:id="@+id/webview"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#917F7F">
+
+        <Button
+            android:id="@+id/buttonlink"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="152dp"
+            android:layout_gravity="center"
+            android:background="#E1D490"
+            android:gravity="center"
+            android:text="This is the details of total cases in Srilanka
+        (Touch here)" />
+
+
     </androidx.cardview.widget.CardView>
 
 

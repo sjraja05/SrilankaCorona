@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "207640179458",
+    "firebase_url": "https://covid-19-f6512.firebaseio.com",
+    "project_id": "covid-19-f6512",
+    "storage_bucket": "covid-19-f6512.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207640179458:android:11ec312187ddc9ddbf881b",
+        "android_client_info": {
+          "package_name": "com.sajithan.android.srilankavscorona"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207640179458-36c48n085ghjcpeevqqb9ervmis0nsuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-MVfed3O1yQ9V18tCRmwtGpAdV3XtHuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207640179458-36c48n085ghjcpeevqqb9ervmis0nsuq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -16,7 +16,7 @@ import androidx.core.content.ContextCompat;
 
 public class EmergencyActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button buttonOne, buttonTwo, buttonThree, buttonFour, buttonFive;
+    private Button buttonOne, buttonTwo, buttonThree, buttonFour, buttonFive, buttonSix, buttonSeven, buttonEight, buttonNine, buttonTen;
     public static final int REQUEST_CALL = 1;
 
     @Override
@@ -31,6 +31,11 @@ public class EmergencyActivity extends AppCompatActivity implements View.OnClick
         buttonThree.setOnClickListener(this);
         buttonFour.setOnClickListener(this);
         buttonFive.setOnClickListener(this);
+        buttonSix.setOnClickListener(this);
+        buttonSeven.setOnClickListener(this);
+        buttonEight.setOnClickListener(this);
+        buttonNine.setOnClickListener(this);
+        buttonTen.setOnClickListener(this);
 
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -46,6 +51,11 @@ public class EmergencyActivity extends AppCompatActivity implements View.OnClick
        buttonThree = findViewById(R.id.button_three);
        buttonFour = findViewById(R.id.button_four);
        buttonFive = findViewById(R.id.button_five);
+       buttonSix = findViewById(R.id.button_six);
+        buttonSeven = findViewById(R.id.button_seven);
+        buttonEight = findViewById(R.id.button_eight);
+        buttonNine = findViewById(R.id.button_nine);
+        buttonTen = findViewById(R.id.button_ten);
     }
 
     @Override
@@ -53,7 +63,12 @@ public class EmergencyActivity extends AppCompatActivity implements View.OnClick
 
         switch (v.getId()) {
 
-            case R.id.button_one:
+            case R.id.button_ten:
+                String numTen = "1390";
+                makePhoneDial(numTen);
+                break;
+
+                case R.id.button_one:
                 String numOne = "118 / 119";
                 makePhoneDial(numOne);
                 break;

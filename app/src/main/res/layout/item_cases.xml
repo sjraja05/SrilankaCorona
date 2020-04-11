@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <ImageView
             android:layout_width="32dp"
@@ -41,7 +42,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#D3D3D3">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,25 +52,26 @@
                 android:weightSum="2">
 
                 <TextView
+                    android:id="@+id/text_view_total_cases"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total Cases"
-                    android:textSize="22sp"
-                    android:padding="8dp"
-                    android:textColor="@android:color/black"
-                    android:id="@+id/text_view_total_cases"
                     android:layout_weight="1"
-                    />
+                    android:background="#D3D3D3"
+                    android:padding="8dp"
+                    android:text="Total Cases"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Today  Cases"
-                    android:padding="8dp"
-                    android:textSize="22sp"
-                    android:textColor="@android:color/black"
                     android:id="@+id/text_view_today_cases"
-                    android:layout_weight="1"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#D3D3D3"
+                    android:padding="8dp"
+                    android:text="Today  Cases"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -79,24 +82,26 @@
                 android:weightSum="2">
 
                 <TextView
+                    android:id="@+id/text_view_total_deaths"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total Deaths"
-                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:background="#D3D3D3"
                     android:padding="8dp"
+                    android:text="Total Deaths"
                     android:textColor="@android:color/black"
-                    android:id="@+id/text_view_total_deaths"
-                    android:layout_weight="1"/>
+                    android:textSize="22sp" />
 
                 <TextView
+                    android:id="@+id/text_view_today_deaths"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Today  Deaths"
-                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:background="#D3D3D3"
                     android:padding="8dp"
+                    android:text="Today  Deaths"
                     android:textColor="@android:color/black"
-                    android:id="@+id/text_view_today_deaths"
-                    android:layout_weight="1"/>
+                    android:textSize="22sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -126,7 +131,7 @@
                     android:textColor="@android:color/black"
                     android:id="@+id/text_view_active_cases"
                     android:layout_weight="1"
-                    android:background="#FF0000"/>
+                    android:background="#FF001E"/>
             </LinearLayout>
 
         </LinearLayout>

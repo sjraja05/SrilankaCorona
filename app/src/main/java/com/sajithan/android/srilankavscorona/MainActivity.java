@@ -29,6 +29,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.squareup.okhttp.OkHttpClient;
 
@@ -42,6 +43,7 @@ import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, NewsAdapter.onItemClickListner {
+    private FirebaseAnalytics mFirebaseAnalytics;
     Context context;
     // ArrayList<HospitalDetailModel> dataList;
     TextView newCases , totalCases , deaths, recovered;
@@ -72,7 +74,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+// Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         context=getApplicationContext();
         newCasesLocal=findViewById(R.id.newcasesTextDisplayLocal);
         totalCasesLocal=findViewById(R.id.totalCasesTextDisplayLocal);
@@ -209,7 +212,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch (menuItem.getItemId()) {
 
-
+            case R.id.nav_refresh:
+                Intent intent = getIntent();
+                finish();
+                startActivity(intent);
+                Toast.makeText(this, "Refreshed", Toast.LENGTH_SHORT).show();
+                break;
             case R.id.nav_emergency:
                 startActivity(new Intent(MainActivity.this, EmergencyActivity.class));
                 break;
@@ -286,4 +294,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         startActivity(detailIntent);
     }
+
+
+
+
 }

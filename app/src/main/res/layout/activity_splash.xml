@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    android:background="@drawable/bac"
+    android:background="@color/cardview_dark_background"
     tools:context=".SplashActivity">
 
     <TextView
@@ -40,21 +40,21 @@
         android:fontFamily="sans-serif-smallcaps"
         android:text="©Twelve Twingles"
         android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#AA9292"
         android:textSize="20sp"
 
         />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="310dp"
-        android:layout_height="280dp"
+        android:layout_width="320dp"
+        android:layout_height="336dp"
         android:layout_above="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="63dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="63dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="39dp"
         app:srcCompat="@drawable/coro" />
 
 </RelativeLayout>

@@ -11,7 +11,5 @@
     </string>
     <string name="title_activity_maps">Map</string>
 
-    <string name="about">CoronaVsSL is a app that collects the recent data about the pandemic corona virus
-    and provides the useful information to the user dynamically. I made a use of an api to fetch the stats about
-    corona on different nations of the world. </string>
+    <string name="about">This app provides active information updates on the extremely threatening Corona virus (COVID-19). The users able to receive instant updates on SriLanka and other nations from some trusted source as well as some basic information regarding the Corona virus. </string>
 </resources>

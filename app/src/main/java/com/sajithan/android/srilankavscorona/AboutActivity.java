@@ -27,10 +27,10 @@ public class AboutActivity extends AppCompatActivity {
         mGitImageview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://github.com/sjraja05";
-                Intent gitInent = new Intent(Intent.ACTION_SEND);
-                gitInent.setData(Uri.parse(url));
-                startActivity(gitInent);
+                Intent browserIntent = new Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://github.com/sjraja05"));
+                startActivity(browserIntent);
 
             }
         });

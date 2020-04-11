@@ -69,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="We are a group of Computer Science students in Uva Wellasssa University of Srilanka. This our small contribution in this bad situation. We are android developers currently studying BSc in Computer Sciene and Technology. We wish all of you will get a Safe and Good health condition during this time."
+            android:text="The app is developed by group of undergraduates, who are following Computer Science and Technology at Uva Wellassa University of Sri Lanka."
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@android:color/white"
             android:textSize="18sp"
